@@ -31,4 +31,17 @@ a_perp=F*cos_theta/me
 N: spatial density
 K=2*Z*e^2/(4*pi*epslon*me*v) 
 dE/dx=2*pi*gamma*N*e^2*K^2*ln(b_max/b_min)/(6*pi*epslon*c^3) #energy loss per unit length
+=E/x0
+
+%%
+Phonton energy loss
+sigma: Cross_section
+lambda=1/n*sigma #mean free path
+Attenuation: I=I0*exp(-x/lambda)
+Attenuation length: nu=1/lambda
+n=density*NA/A
+A: mole mass
+r_0=2.8*10^-13 #cm, classical electron radius
+
+
 """
