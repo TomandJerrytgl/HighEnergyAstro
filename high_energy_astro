@@ -1,0 +1,34 @@
+"""
+%%
+this is for high energy astro physic 
+
+constant
+c=3e10 #cm/s
+e=4.8e-10 #esu
+me=9.1e-28 #g
+NA=6.02e23 #1/mol
+epslon=8.85e-12 #F/m
+
+%%
+ionization calculation
+energy_loss= 4*pi*z*z*e^4*Ne*math.ln(gamma^2*me*v^2/I0)/((4*pi*epslon)^2*me*v^2) #g/cm^2 dE/dx
+Ne=Z*density*NA/M #Z number of proton, M mole mass
+I0= #average over all electrons in atom
+
+%%
+Bremsstrahlung
+Energy loss linear with E
+lamor formula: energy loss per unit time
+In electron frame
+power=e^2*a^2/(6*pi*epslon*c^3)
+x=gamma*v*t #Nucleus position
+r=math.sqrt(b^2+x^2) #Radial distance
+cos_theta=b/r
+E=Z*e/(4*pi*epslon)/r^2 #electric field in lab frame
+E_prime=gamma*E #electron field in electron frame
+F=e*E_prime #force in lab frame
+a_perp=F*cos_theta/me
+N: spatial density
+K=2*Z*e^2/(4*pi*epslon*me*v) 
+dE/dx=2*pi*gamma*N*e^2*K^2*ln(b_max/b_min)/(6*pi*epslon*c^3) #energy loss per unit length
+"""
