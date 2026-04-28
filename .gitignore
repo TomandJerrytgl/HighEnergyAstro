@@ -1,0 +1,21 @@
+# Mac
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc
+
+# 虚拟环境
+.venv/
+
+# VSCode / IDE
+.vscode/
+.idea/
+
+# 打包
+build/
+dist/
+
+# 临时文件
+*.log
+*.tmp
