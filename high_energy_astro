@@ -44,5 +44,39 @@ A: mole mass
 r_0=2.8*10^-13 #cm, classical electron radius
 E_0: critical energy were radiative losses is equal to ionization and compton losses
 
+%%
+determining composition of cherenkov radiation
+water cherenkov 
+scintillator
+get electron and photon signals almost same time
+muon signal in a wider range
+
+%%
+Cosmic Rays
+Larmor Radius R_L=100pc*{E/Z}*10^18eV
+where Z is charge of cosmic ray particle, E is energy of cosmic ray particle
+Flux=delta_N/(delta_A*delta_t) #number of particles per unit area per unit time
+Intensity=delta_N/(delta_A*delta_t*delta_Omega) #number of particles per unit area per unit time per unit solid angle
+dU=diff.flux*E_cr*4*pi/c
+
+
+%%
+isotopic clock
+dN/dt=-N/tau+sim(P*N/tau)
+"""
+"""
+LOGIC
+
+Energy coming from
+1. black body
+2. blue shift
+
+How to measure energy
+Energy loss
+
+
+em casade
+hadronic casade
+
 
 """
